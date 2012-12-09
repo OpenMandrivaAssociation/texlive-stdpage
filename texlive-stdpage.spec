@@ -54,3 +54,17 @@ each.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-2
++ Revision: 756245
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
++ Revision: 719586
+- texlive-stdpage
+- texlive-stdpage
+- texlive-stdpage
+- texlive-stdpage
+
