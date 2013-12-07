@@ -6,7 +6,7 @@
 # catalog-version 0.6
 Name:		texlive-stdpage
 Version:	0.6
-Release:	5
+Release:	6
 Summary:	Standard pages with n lines of at most m characters each
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stdpage
