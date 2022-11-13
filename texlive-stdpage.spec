@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/stdpage
-# catalog-date 2006-11-06 12:37:44 +0100
-# catalog-license lppl1.2
-# catalog-version 0.6
 Name:		texlive-stdpage
-Version:	0.6
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Standard pages with n lines of at most m characters each
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stdpage
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ instance the German "Normseite": 60 lines of 30 characters
 each.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,24 +41,11 @@ each.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-2
-+ Revision: 756245
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
-+ Revision: 719586
-- texlive-stdpage
-- texlive-stdpage
-- texlive-stdpage
-- texlive-stdpage
-
