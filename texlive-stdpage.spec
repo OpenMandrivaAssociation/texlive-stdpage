@@ -1,6 +1,6 @@
 Name:		texlive-stdpage
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Standard pages with n lines of at most m characters each
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stdpage
