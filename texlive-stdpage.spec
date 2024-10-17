@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Standard pages with n lines of at most m characters each
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stdpage
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/stdpage
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/stdpage.doc.r%{version}.tar.xz
